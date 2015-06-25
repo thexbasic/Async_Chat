@@ -1,0 +1,27 @@
+﻿
+Client -> Server:
+
+	001 - Connect (uniqueId, username, passwort)
+	002 - Disconnect (reason)
+	003 - Ping (random number)
+	004 - Message (message)
+	005 - Request Client-list
+	006 - Request Ban-list
+	007 - Request Kick
+	008 - Request Ban
+	009 - Request unban
+	010 - Whisper (Client, message)
+
+Server -> Client:
+
+	001 - Auth OK (encryption key)
+	002 - Disconnect (reason)
+	003 - Ping answer (random number back)
+	004 - Message (client, message)
+	005 - Client List 
+	006 - Ban List
+	007 - Client joined (Client)
+	008 - Client left (Client, reason)
+	009 - Client Update (Client[])
+	010 - Whisper (Client, message)
+	011 - Error message 
